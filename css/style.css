@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,700,800');
+
+body{
+color:  #262626;
+font: 300 17px/1.58 'Raleway', sans-serif;
+}
+@font-face {
+    font-family: 'pacificoregular';
+    src: url(../fonts/pacifico-webfont.woff2) format(woff2),
+         url(../fonts/pacifico-webfont.woff) format(woff);
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1210px;
+}
+
+/* Typography */
+a:focus {
+	outline: 2px dashed #ff6033;
+}
+a {
+	text-decoration: none;
+}
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+button:focus {
+	outline: 2px dashed #ff6033;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+
+.ba-intro {
+position: relative;
+padding-top: 45px;
+background: url(../img/bg1.jpg) 50% 7%;
+background-size: 80%;
+
+}
+.ba-logo {
+	float: left;
+}
+.ba-nav {
+	padding-top: 13px;
+	float: right;
+}
+.ba-menu {
+	list-style: none;
+	margin: 0;
+}
+.ba-intro__title {
+	font-size: 60px;
+	font-weight: 800;
+	margin: 0;
+}
+.ba-menu li {
+	display: inline-block;
+	margin-left: 33px;
+}
+.ba-menu a {
+	color: #262626;
+	font-size: 16px;
+	font-weight: 700;
+	display: block;
+	text-transform: uppercase;
+}
+.ba-menu a:hover {
+	box-shadow: 0px -3px 0px 0px  #ff6033;
+	transition: box-shadow .3s;
+}
+.ba-intro__section {
+	max-width: 368px;
+	padding-top: 229px;
+	padding-bottom: 397px;
+
+}
+.ba-intro__section p {
+	text-align: justify;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+.ba-scroll {
+	position: absolute;
+	bottom: 69px;
+	left: 50%;
+	width: 23px;
+	height: 37px;
+	margin-left: -11px;
+}
+.ba-section__button {
+	color: #fff;
+	font-size: 20px;
+	line-height: 1.35em;
+	padding: 15px 25px;
+	background-color:  #ff6033;
+	text-transform: uppercase;
+}
+.ba-section__button:hover {
+	background-color:  #262626;
+}
