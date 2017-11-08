@@ -72,12 +72,19 @@ textarea {
 
 }
 
-
+.ba-header {
+	padding-top: 45px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 38%,rgba(255,255,255,0.73) 55%,rgba(255,255,255,0) 100%);
+}
 .ba-intro {
 position: relative;
-padding-top: 45px;
-background: url(../img/bg1.jpg) 50% 7%;
-background-size: 80%;
+background: url(../img/bg1.jpg) 50%;
+background-size: cover;
+z-index: 0;
 
 }
 .ba-logo {
@@ -112,9 +119,13 @@ background-size: 80%;
 	transition: box-shadow .3s;
 }
 .ba-intro__section {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	max-width: 368px;
-	padding-top: 229px;
-	padding-bottom: 397px;
+	padding-top:  81px;
+	padding-bottom: 100px;
 
 }
 .ba-intro__section p {
@@ -140,4 +151,112 @@ background-size: 80%;
 }
 .ba-section__button:hover {
 	background-color:  #262626;
+}
+
+.ba-about {
+	background-color: #00B2B2;
+	color: #fff;
+}
+.ba-about__bg {
+	float: left;
+	padding: 50px 20px 20px 0;
+}
+
+.ba-about__content {
+	float: right;
+	padding-top: 157px;
+	padding-left: 52px;
+	padding-right: 20px;
+}
+.ba-about__title {
+	font-size: 90px;
+	font-weight: 700;
+	margin: 0;
+	line-height: 1.3;
+}
+.ba-about__content p {
+	margin-top: 0;
+}
+.ba-services {
+	background: #70BFFF url(../img/tomato.png) 75% no-repeat;
+}
+
+.ba-services__content {
+	padding: 180px 0 151px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.ba-services__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	flex-basis: 400px;
+}
+.ba-services__list li {
+	background: #FFF;
+	margin-bottom: 20px;
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.ba-services__list a {
+	display: flex;
+	flex-basis: 400px;
+	height: 100px;
+	position: relative;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+.ba-services__list h4 {
+	color:  #262626;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	margin: 0;
+	margin-left: -90px;
+	display: inline-block;
+}
+.ba-services__list svg {
+	height: 54px;
+	width: 54px;
+	position: absolute;
+	right: 6%;
+}
+.ba-services__list a::after {
+	position: absolute;
+	content: "";
+	width: 1px;
+	height: 100%;
+	right: 25%;
+	background: #9d9d9d;
+}
+.ba-services__list a:hover h4{
+   color: #fd581b;
+}
+.ba-services__list a:hover .cls-1 {
+	fill:  #fd581b;
+}
+.ba-services__info {
+	font-size: 90px;
+	font-weight: 700;
+	color: #FFF;
+}
+.ba-gallery {
+	background-color: #ffff33;
+}
+.ba-gallery__header {
+	max-width: 600px;
+	padding-top: 75px;
+	text-align: center;
+	margin: 0 auto;
+}
+.ba-gallery__title {
+	font-size: 90px;
+	font-weight: 700;
+	margin: 0;
+	line-height: 1.3;
+}
+.ba-grid__content {
+	padding-top: 20px;
+	padding-bottom: 90px;
 }
